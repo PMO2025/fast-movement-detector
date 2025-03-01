@@ -1,0 +1,1 @@
+Object movement speed detection.
