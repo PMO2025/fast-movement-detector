@@ -1,3 +1,5 @@
-/weights
-/output
+/outputs
+/sources
+/vda
+/yolo
 /.venv
