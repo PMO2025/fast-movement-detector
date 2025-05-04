@@ -1,0 +1,204 @@
+:root {
+    --color-black: #121212;
+    --color-black-light: #1e1e1e;
+    --color-black-lighter: #2a2a2a;
+    --color-red: #e63946;
+    --color-red-dark: #c1121f;
+    --color-red-light: #f8ad9d;
+    --color-white: #f8f9fa;
+    --color-gray: #495057;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .app-header, .app-footer {
+    background-color: var(--color-black-light);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .app-main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .error-message {
+    background-color: var(--color-red-dark);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .error-message button {
+    margin-left: auto;
+    background: none;
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+  }
+  
+  .error-message button:hover {
+    background-color: var(--color-red);
+  }
+  
+  .upload-window,
+  .preview-window,
+  .loading-window,
+  .results-window {
+    background-color: var(--color-black-light);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .upload-area {
+    border: 2px dashed var(--color-gray);
+    border-radius: var(--border-radius);
+    padding: 3rem;
+    text-align: center;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  
+  .upload-area.drag-active {
+    border-color: var(--color-red);
+    background-color: var(--color-black-lighter);
+  }
+  
+  .upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+  }
+  
+  .browse-button {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .browse-button:hover {
+    background-color: var(--color-red-dark);
+  }
+  
+  .error-text {
+    color: var(--color-red-light);
+    text-align: center;
+  }
+  
+  .video-container {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: var(--color-black);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .primary-button {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: bold;
+  }
+  
+  .primary-button:hover {
+    background-color: var(--color-red-dark);
+  }
+  
+  .secondary-button {
+    background-color: transparent;
+    color: var(--color-white);
+    border: 1px solid var(--color-gray);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .secondary-button:hover {
+    border-color: var(--color-white);
+  }
+  
+  .progress-container {
+    width: 100%;
+    height: 2rem;
+    background-color: var(--color-black-lighter);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: var(--color-red);
+    transition: width 0.3s ease;
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-white);
+    font-weight: bold;
+  }
+  
+  .status-message {
+    text-align: center;
+    color: var(--color-gray);
+  }
