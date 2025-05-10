@@ -1,14 +1,14 @@
 <!-- PROJECT LOGO -->
 <br />
-<p style="text-align: center;">
+<p align="center">
   <a href="https://github.com/PMO2025/fast-movement-detector">
     <img src="./docs_src/run-from-me-preview.jpg" alt="Logo" width="150" height="150">
   </a>
 
-  <h3 style="text-align: center;">Детектор резкого ускорения в кадре</h3>
+  <h3 align="center">Детектор резкого ускорения в кадре</h3>
 </p>
 
-<p style="text-align: center;">
+<p align="center">
   <a href="https://github.com/egormalyutin/"><b>Егор Малютин</b></a> · <a href="https://github.com/ribus2005/"><b>Лев Морякин</b></a> · <a href="https://github.com/703lovelost/"><b>Алексей Спиркин</b></a>
   <br />
   Институт Интеллектуальной Робототехники
@@ -16,7 +16,7 @@
   Под кураторством м.н.с. ЦИИ НГУ В.Ю. Кудинова
 </p>
 
-<p style="text-align: center;">
+<p align="center">
   В данной работе представлен детектор резкого ускорения объектов в видеопотоке
   <br />
   <a href="#">Ознакомиться с демо</a>
