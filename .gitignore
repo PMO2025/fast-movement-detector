@@ -1,0 +1,6 @@
+/.venv
+/bak
+/models
+/temp
+/videos/rapidmov
+__pycache__
